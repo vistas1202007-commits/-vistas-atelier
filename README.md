@@ -1,36 +1,48 @@
-# Vistas Atelier website
+# Vistas Atelier
 
-Next.js site for Vistas Atelier: homepage, case studies, journal, contact form with a real backend, and a private admin panel.
+**Live site → [spontaneous-genie-50c08b.netlify.app](https://spontaneous-genie-50c08b.netlify.app)**
 
-## Run on your computer
-1. Install Node.js LTS.
-2. In this folder run `npm install`, then `npm run dev`.
-3. Open http://localhost:3000.
+Vistas Atelier is my independent digital studio based in India. I design and build websites, web apps and data tools for businesses in India and abroad. This repository is the studio's own website, designed and built by me from scratch.
 
-## Where to change things
-| What | File |
-|---|---|
-| Email, WhatsApp, booking link, prices, services, FAQ | `src/content/site.ts` |
-| Portfolio projects & case studies | `src/content/projects.ts` |
-| Journal articles | `src/content/journal.ts` |
-| Your photo (optional) | save as `public/studio/founder.jpg` |
-| Colours, fonts, spacing | `src/app/globals.css` (section 1: tokens) |
+## What's on the site
 
-## Publish free on Netlify
-1. Create a free GitHub account and upload this folder as a repository (the `.env.local` file is excluded automatically).
-2. Create a free Netlify account → **Add new site → Import from GitHub** → pick the repository. Netlify detects Next.js and builds it.
-3. In Netlify → **Site configuration → Environment variables**, add `ADMIN_PASSWORD` (a long password of your choice).
-4. Redeploy. Your site is live on a free `something.netlify.app` address; connect `vistasatelier.com` later under **Domain management**.
+- **Homepage**: an introduction to the studio, selected work, services, industries, the five-step process (Discover → Define → Design → Develop → Launch), engagement plans and FAQs.
+- **Work**: detailed case studies, each covering the challenge, the approach, key features, colour palette and typography.
+- **Studio**: the story behind Vistas Atelier and how I work with clients.
+- **Journal**: articles for business owners, such as *"What makes a small-business website feel trustworthy?"* and *"Website, web app or mobile app? How to choose"*.
+- **Contact**: an enquiry form where visitors choose a service, budget and timeline. It also has WhatsApp and LinkedIn links.
+- **Admin panel**: a private, password-protected page where I read and export incoming enquiries.
 
-Enquiries are saved automatically in Netlify's free built-in storage (Netlify Blobs). Read them at `/admin`.
+## Featured projects
 
-## Optional extras (all have free plans)
-- **Email notifications:** create a Resend account and add `RESEND_API_KEY` (see `.env.example`). Without it, check `/admin` for new enquiries.
-- **Call booking:** create a Calendly or Cal.com account and paste the link into `bookingUrl` in `src/content/site.ts`.
-- **Supabase:** only if you outgrow Netlify storage. Run `supabase/schema.sql` and add its keys.
+| Project | Sector | What it does |
+|---|---|---|
+| **Aaina Beauty Studio** | Beauty & wellness | A salon site where booking takes under a minute |
+| **FreshFold** | Local services | Laundry pickup scheduled in three taps |
+| **Gather** | Food & hospitality | A QR menu that feels like the restaurant, not a PDF |
+| **Loom & Ledger** | Retail · Data | Three spreadsheets turned into one morning dashboard |
 
-## Before going live
-- Replace `REPLACE_WITH_REAL_EMAIL` in `src/content/site.ts`.
-- Add real prices (or keep "Fixed quote after a call").
-- Concept projects stay labelled as concepts; add real client work when you can.
-- Only publish genuine testimonials and client names.
+## Services
+
+Websites · Web applications · Mobile applications · E-commerce · UI/UX design · Data & business tools
+
+## Highlights
+
+- Mobile-first, responsive design with smooth scrolling and motion
+- Fast pages with SEO built in: sitemap, robots and social share images
+- A real enquiry backend with spam rate limiting and email notifications
+- A secure admin login for managing enquiries
+
+## Built with
+
+Next.js · React · TypeScript · Framer Motion · Lenis · React Hook Form · Zod · Netlify
+
+## Connect
+
+- 🌐 Website: [spontaneous-genie-50c08b.netlify.app](https://spontaneous-genie-50c08b.netlify.app)
+- 💼 LinkedIn: [Shivani Sharma](https://www.linkedin.com/in/shivani-sharma-167239341/)
+- 🐙 GitHub: [vistas1202007-commits](https://github.com/vistas1202007-commits)
+
+---
+
+© 2026 Vistas Atelier · Designed and developed by Shivani Sharma
