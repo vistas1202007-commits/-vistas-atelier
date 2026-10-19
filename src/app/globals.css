@@ -2465,6 +2465,11 @@ h2 {
   color: var(--ink);
 }
 
+.case-live {
+  margin-top: 28px;
+  align-self: flex-start;
+}
+
 .case-hero {
   aspect-ratio: 16 / 8;
   margin: 0 var(--gutter);

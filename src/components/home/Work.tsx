@@ -23,6 +23,7 @@ export function ProjectCard({ p, large = false }: { p: Project; large?: boolean 
           {p.scope.map((s) => (
             <li key={s}>{s}</li>
           ))}
+          {p.liveUrl && <li>Live site ↗</li>}
         </ul>
       </div>
     </Link>

@@ -15,6 +15,8 @@ export type Project = {
   features: string[];
   palette: { name: string; hex: string }[];
   type: string[];
+  // Optional link to the deployed version of the project.
+  liveUrl?: string;
 };
 
 // Concept projects are self-initiated studies and are always labelled as such.
@@ -27,6 +29,7 @@ export const projects: Project[] = [
     kind: "Concept",
     year: "2026",
     mockup: "beauty",
+    liveUrl: "https://strong-cucurucho-858239.netlify.app",
     tagline: "A salon site where booking takes under a minute.",
     summary:
       "A website for a neighbourhood salon that wants fewer back-and-forth WhatsApp messages and more confirmed appointments.",
@@ -63,6 +66,7 @@ export const projects: Project[] = [
     kind: "Concept",
     year: "2026",
     mockup: "laundry",
+    liveUrl: "https://harmonious-sherbet-361c4f.netlify.app",
     tagline: "Laundry pickup scheduled in three taps.",
     summary:
       "A mobile-first ordering app for a laundry and dry-cleaning service that wants to move customers off phone calls.",

@@ -48,6 +48,11 @@ export default async function CaseStudy({ params }: Props) {
             <dd>{p.kind === "Concept" ? "Self-initiated concept" : "Client project"}</dd>
           </div>
         </dl>
+        {p.liveUrl && (
+          <a className="button button-accent case-live" href={p.liveUrl} target="_blank" rel="noopener noreferrer">
+            View live site ↗
+          </a>
+        )}
       </header>
 
       <Reveal className={`case-hero project-stage stage-${p.mockup}`}>
